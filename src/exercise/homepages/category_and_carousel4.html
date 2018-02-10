@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>分类与轮播</title>
+    <script type="text/javascript" src="../lib/js/jquery-3.2.1.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="../lib/css/bootstrap.min.css">
+    <script type="text/javascript" src="../lib/js/bootstrap.min.js"></script>
+</head>
+<style>
+    div.category_carousel {
+        position: relative;
+        width: 100%;
+    }
+
+    div.headBar {
+        background-color: #DD2727;
+    }
+
+    div.headBar div.head {
+        margin-left: 20px;
+        color: white;
+        font-size: 16px;
+        line-height: 36px;
+        width: 200px;
+        height: 36px;
+        font-weight: bold;
+        background-color: #C60A0A;
+        display: inline-block;
+    }
+
+    div.headBar div.rightMenu {
+        display: inline-block;
+    }
+
+    div.headBar div.rightMenu img {
+        height: 34px;
+    }
+
+    div.rightMenu span {
+        margin: 0px 20px 0px 20px;
+    }
+
+    div.rightMenu a {
+        text-decoration: none;
+        font-size: 16px;
+        color: white;
+    }
+
+    div.carousel-of-product {
+        width: 1180px;
+        height: 500px;
+        margin: 0px auto;
+    }
+
+    div.carouselImg {
+        height: 500px !important;
+    }
+
+    div.carouselBgDiv {
+        width: 100%;
+        height: 500px;
+        position: absolute;
+        background-color: #e8e8e8;
+        top: 36px;
+        z-index: -1;
+    }
+
+</style>
+<body>
+<div class="category_carousel">
+    <div class="headBar">
+        <div class="head">
+            <span class="glyphicon glyphicon-th-list" style="margin-left: 10px"></span>
+            <span style="margin-left: 10px">商品分类</span>
+        </div>
+        <div class="rightMenu">
+            <span><a href="category_and_carousel4.html"><img src="../lib/img/chaoshi.png"></a> </span>
+            <span><a href="category_and_carousel4.html"><img src="../lib/img/guoji.png"></a> </span>
+            <span><a href="category_and_carousel4.html">平板电视</a> </span>
+            <span><a href="category_and_carousel4.html">马桶</a> </span>
+            <span><a href="category_and_carousel4.html">沙发</a> </span>
+            <span><a href="category_and_carousel4.html">电热水器</a> </span>
+        </div>
+    </div>
+    <div class="carousel-of-product carousel slide" id="carousel-of-product" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-slide-to="0" class="active" data-target="#carousel-of-product"></li>
+            <li data-slide-to="1" data-target="#carousel-of-product"></li>
+            <li data-slide-to="2" data-target="#carousel-of-product"></li>
+            <li data-slide-to="3" data-target="#carousel-of-product"></li>
+        </ol>
+        <div class="carousel-inner" role="listbox">
+            <div class="item active">
+                <img src="../lib/img/carousel/1.jpg" class="carouselImg">
+            </div>
+            <div class="item">
+                <img src="../lib/img/carousel/2.jpg" class="carouselImg">
+            </div>
+            <div class="item">
+                <img src="../lib/img/carousel/3.jpg" class="carouselImg">
+            </div>
+            <div class="item">
+                <img src="../lib/img/carousel/4.jpg" class="carouselImg">
+            </div>
+        </div>
+    </div>
+    <div class="carouselBgDiv"></div>
+</div>
+</body>
+</html>

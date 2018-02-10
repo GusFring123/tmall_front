@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>简单搜索栏</title>
+    <script type="text/javascript" src="../lib/js/jquery-3.2.1.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="../lib/css/bootstrap.min.css">
+    <script type="text/javascript" src="../lib/js/bootstrap.min.js"></script>
+</head>
+<style>
+    div.simpleSearchDiv {
+        background-color: #C40000;
+        width: 300px;
+        height: 40px;
+        padding: 1px;
+        /*用块状显示，只有使用块状显示的时候，上下外边距才会生效*/
+        display: block;
+    }
+
+    div.simpleSearchDiv input {
+        width: 225px;
+        height: 34px;
+        margin: 2px;
+        outline: none;
+        border: 1px solid transparent;
+    }
+
+    div.simpleSearchDiv button {
+        width: 60px;
+        border: 1px solid transparent;
+        background-color: transparent;
+        color: white;
+        font-size: 14px;
+        /*font-weight: bold;*/
+    }
+
+    div.searchBelow {
+        margin-top: 3px;
+        margin-left: -20px;
+    }
+
+    div.searchBelow span {
+        color: #999999;
+    }
+
+    div.searchBelow a {
+        margin: 0px 20px 0px 20px;
+        font-size: 14px;
+    }
+
+    body {
+        font-size: 12px;
+        font-family: Arial;
+    }
+
+    img.simpleLogo {
+        position: absolute;
+        left: 10px;
+        top: 50px;
+        width: 140px;
+    }
+
+    a {
+        color: #999999;
+    }
+
+    a:hover {
+        text-decoration: none;
+        color: #C40000;
+    }
+
+</style>
+<body>
+<div>
+    <a href="search_bar_simple.html">
+        <img class="simpleLogo" id="simpleLogo" src="../lib/img/simpleLogo.png">
+    </a>
+    <div class="simpleSearchDiv pull-right">
+        <input type="text" placeholder="平衡车  原汁机">
+        <button type="submit">搜天猫</button>
+        <div class="searchBelow">
+            <span>
+                <a href="search_bar_simple.html">
+                    冰箱
+                </a>
+                <span>|</span>
+            </span>
+            <span>
+                <a href="search_bar_simple.html">
+                    空调
+                </a>
+            <span>|</span>
+            </span>
+            <span>
+                <a href="search_bar_simple.html">
+                    女装
+                </a>
+            <span>|</span>
+            </span>
+            <span>
+                <a href="search_bar_simple.html">
+                    显示器
+                </a>
+            </span>
+        </div>
+    </div>
+</div>
+</body>
+</html>

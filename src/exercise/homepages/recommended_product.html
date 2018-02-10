@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>推荐产品列表</title>
+    <script type="text/javascript" src="../lib/js/jquery-3.2.1.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="../lib/css/bootstrap.min.css">
+    <script type="text/javascript" src="../lib/js/bootstrap.min.js"></script>
+</head>
+<style>
+    div.category_carousel {
+        background-color: #e2e2e3;
+        width: 200px;
+        margin-left: 20px;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        z-index: 1;
+    }
+
+    div.categoryMenu a {
+        color: #000000;
+    }
+
+    div.categoryMenu a:hover {
+        text-decoration: none;
+        color: lightskyblue;
+    }
+
+    div.product_category {
+        margin-left: 200px;
+        width: 800px;
+        background-color: white;
+        height: 510px;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        z-index: 1;
+    }
+
+    div.row {
+        margin: 20px 80px 20px 80px;
+    }
+
+    div.separator {
+        border-bottom: 1px dashed #e7e7e7;
+        margin-top: 20px;
+    }
+
+    div.row a {
+        color: #999999;
+        margin: 8px;
+        font-size: 14px;
+    }
+
+    div.row a:hover {
+        color: #C40000;
+        text-decoration: none;
+    }
+
+    div.eachCategory {
+        line-height: 30px;
+        margin-left: 10px;
+        font-size: 14px;
+    }
+    div.eachCategory a {
+        margin-left: 10px;
+    }
+    div.categoryMenu:hover {
+        background-color: white;
+    }
+
+</style>
+<body>
+<div class="category_carousel">
+    <div style="position: relative">
+        <div class="categoryMenu">
+            <div class="eachCategory">
+                <span class="glyphicon glyphicon-link"></span>
+                <a href="recommended_product.html">平板电视</a>
+            </div>
+        </div>
+        <div class="categoryMenu">
+            <div class="eachCategory">
+                <span class="glyphicon glyphicon-link"></span>
+                <a href="recommended_product.html">平板电视</a>
+            </div>
+        </div>
+        <div class="categoryMenu">
+            <div class="eachCategory">
+                <span class="glyphicon glyphicon-link"></span>
+                <a href="recommended_product.html">平板电视</a>
+            </div>
+        </div>
+        <div class="categoryMenu">
+            <div class="eachCategory">
+                <span class="glyphicon glyphicon-link"></span>
+                <a href="recommended_product.html">平板电视</a>
+            </div>
+        </div>
+        <div class="categoryMenu">
+            <div class="eachCategory">
+                <span class="glyphicon glyphicon-link"></span>
+                <a href="recommended_product.html">平板电视</a>
+            </div>
+        </div>
+        <div class="categoryMenu">
+            <div class="eachCategory">
+                <span class="glyphicon glyphicon-link"></span>
+                <a href="recommended_product.html">平板电视</a>
+            </div>
+        </div>
+        <div class="categoryMenu">
+            <div class="eachCategory">
+                <span class="glyphicon glyphicon-link"></span>
+                <a href="recommended_product.html">平板电视</a>
+            </div>
+        </div>
+        <div class="categoryMenu">
+            <div class="eachCategory">
+                <span class="glyphicon glyphicon-link"></span>
+                <a href="recommended_product.html">平板电视</a>
+            </div>
+        </div>
+        <div class="categoryMenu">
+            <div class="eachCategory">
+                <span class="glyphicon glyphicon-link"></span>
+                <a href="recommended_product.html">平板电视</a>
+            </div>
+        </div>
+        <div class="categoryMenu">
+            <div class="eachCategory">
+                <span class="glyphicon glyphicon-link"></span>
+                <a href="recommended_product.html">平板电视</a>
+            </div>
+        </div>
+        <div class="categoryMenu">
+            <div class="eachCategory">
+                <span class="glyphicon glyphicon-link"></span>
+                <a href="recommended_product.html">平板电视</a>
+            </div>
+        </div>
+        <div class="categoryMenu">
+            <div class="eachCategory">
+                <span class="glyphicon glyphicon-link"></span>
+                <a href="recommended_product.html">平板电视</a>
+            </div>
+        </div>
+        <div class="categoryMenu">
+            <div class="eachCategory">
+                <span class="glyphicon glyphicon-link"></span>
+                <a href="recommended_product.html">平板电视</a>
+            </div>
+        </div>
+        <div class="categoryMenu">
+            <div class="eachCategory">
+                <span class="glyphicon glyphicon-link"></span>
+                <a href="recommended_product.html">平板电视</a>
+            </div>
+        </div>
+        <div class="categoryMenu">
+            <div class="eachCategory">
+                <span class="glyphicon glyphicon-link"></span>
+                <a href="recommended_product.html">平板电视</a>
+            </div>
+        </div>
+        <div class="categoryMenu">
+            <div class="eachCategory">
+                <span class="glyphicon glyphicon-link"></span>
+                <a href="recommended_product.html">平板电视</a>
+            </div>
+        </div>
+        <div class="categoryMenu">
+            <div class="eachCategory">
+                <span class="glyphicon glyphicon-link"></span>
+                <a href="recommended_product.html">平板电视</a>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<div style="position: relative;left: 0px;top: 0px;">
+    <div class="product_category">
+        <div class="row">
+            <a href="recommended_product.html">
+                大屏电视
+            </a>
+            <a href="recommended_product.html">
+                大屏电视
+            </a>
+            <a href="recommended_product.html">
+                大屏电视
+            </a>
+            <a href="recommended_product.html">
+                大屏电视
+            </a>
+            <a href="recommended_product.html">
+                大屏电视
+            </a>
+            <div class="separator"></div>
+        </div>
+        <div class="row">
+            <a href="recommended_product.html">
+                大屏电视
+            </a>
+            <a href="recommended_product.html">
+                大屏电视
+            </a>
+            <a href="recommended_product.html">
+                大屏电视
+            </a>
+            <a href="recommended_product.html">
+                大屏电视
+            </a>
+            <a href="recommended_product.html">
+                大屏电视
+            </a>
+            <div class="separator"></div>
+        </div>
+        <div class="row">
+            <a href="recommended_product.html">
+                大屏电视
+            </a>
+            <a href="recommended_product.html" style="color: lightskyblue">
+                大屏电视
+            </a>
+            <a href="recommended_product.html">
+                大屏电视
+            </a>
+            <a href="recommended_product.html" style="color: lightskyblue">
+                大屏电视
+            </a>
+            <a href="recommended_product.html">
+                大屏电视
+            </a>
+            <div class="separator"></div>
+        </div>
+        <div class="row">
+            <a href="recommended_product.html">
+                大屏电视
+            </a>
+            <a href="recommended_product.html">
+                大屏电视
+            </a>
+            <a href="recommended_product.html">
+                大屏电视
+            </a>
+            <a href="recommended_product.html">
+                大屏电视
+            </a>
+            <a href="recommended_product.html" style="color: lightskyblue">
+                大屏电视
+            </a>
+            <div class="separator"></div>
+        </div>
+        <div class="row">
+            <a href="recommended_product.html">
+                大屏电视
+            </a>
+            <a href="recommended_product.html" style="color: lightskyblue">
+                大屏电视
+            </a>
+            <a href="recommended_product.html">
+                大屏电视
+            </a>
+            <a href="recommended_product.html">
+                大屏电视
+            </a>
+            <a href="recommended_product.html">
+                大屏电视
+            </a>
+            <div class="separator"></div>
+        </div>
+        <div class="row">
+            <a href="recommended_product.html">
+                大屏电视
+            </a>
+            <a href="recommended_product.html">
+                大屏电视
+            </a>
+            <a href="recommended_product.html" style="color: lightskyblue">
+                大屏电视
+            </a>
+            <a href="recommended_product.html">
+                大屏电视
+            </a>
+            <a href="recommended_product.html">
+                大屏电视
+            </a>
+            <div class="separator"></div>
+        </div>
+        <div class="row">
+            <a href="recommended_product.html">
+                大屏电视
+            </a>
+            <a href="recommended_product.html">
+                大屏电视
+            </a>
+            <a href="recommended_product.html">
+                大屏电视
+            </a>
+            <a href="recommended_product.html">
+                大屏电视
+            </a>
+            <a href="recommended_product.html">
+                大屏电视
+            </a>
+            <div class="separator"></div>
+        </div>
+        <div class="row">
+            <a href="recommended_product.html">
+                大屏电视
+            </a>
+            <a href="recommended_product.html">
+                大屏电视
+            </a>
+            <a href="recommended_product.html">
+                大屏电视
+            </a>
+            <a href="recommended_product.html">
+                大屏电视
+            </a>
+            <a href="recommended_product.html">
+                大屏电视
+            </a>
+            <div class="separator"></div>
+        </div>
+
+    </div>
+</div>
+</body>
+</html>

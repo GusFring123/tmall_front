@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>搜索栏</title>
+    <script type="text/javascript" src="../lib/js/jquery-3.2.1.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="../lib/css/bootstrap.min.css">
+    <script type="text/javascript" src="../lib/js/bootstrap.min.js"></script>
+</head>
+<style>
+    /*搜索栏*/
+    div.searchDiv {
+        /*背景天猫红*/
+        background-color: #C40000;
+        /*宽度固定400像素*/
+        width: 400px;
+        /*水平居中，并有50px的上下外边距*/
+        margin: 50px auto;
+        /*内边距为1*/
+        padding: 1px;
+        /*高度40px*/
+        height: 40px;
+        /*以块状元素显示，只有在以块状元素显示的时候，水平居中才有效果，div默认也是以块状元素显示的*/
+        display: block;
+    }
+
+    /*输入框*/
+    div.searchDiv input {
+        width: 275px;
+        /*边框透明否则有阴影*/
+        border: 1px solid transparent;
+        height: 36px;
+        margin: 1px;
+        /*去掉获取光标焦点后的颜色变化*/
+        outline: none;
+    }
+
+    /*按钮*/
+    div.searchDiv button {
+        width: 110px;
+        /*防止边框阴影*/
+        border: 1px solid transparent;
+        /*背景设置为天猫红或者透明*/
+        background-color: transparent;
+        /*字体白色*/
+        color: white;
+        /*字体大小20px*/
+        font-size: 20px;
+        /*加粗*/
+        font-weight: bold;
+    }
+
+    /*搜索栏下方关键字*/
+    div.searchBelow {
+        /*3像素边距*/
+        margin-top: 3px;
+        /*左外边距-20像素*/
+        margin-left: -20px;
+    }
+
+    /*关键字之间的分隔棒*/
+    div.searchBelow span {
+        color: #999999;
+    }
+
+    /*关键字超链*/
+    div.searchBelow a {
+        /*只有水平间隔*/
+        padding: 0px 20px 0px 20px;
+        /*超链文字大小*/
+        font-size: 14px;
+    }
+
+    /*logo图片*/
+    img.logo {
+        /*绝对定位*/
+        position: absolute;
+        /*贴在左边*/
+        left: 0px;
+        /*距离上面30px*/
+        top: 30px;
+        /*-1表示放在下面，防止图片遮住了输入框*/
+        z-index: -1;
+    }
+
+    body {
+        /*所有字体12px*/
+        font-size: 12px;
+        /*字库*/
+        font-family: Arial;
+    }
+
+    /*超链变灰色*/
+    a {
+        color: #999999;
+    }
+
+    /*鼠标悬停*/
+    a:hover {
+        color: #C40000;
+        text-decoration: none;
+    }
+
+
+</style>
+<body>
+<div>
+    <a href="search_bar.html">
+        <img id="logo" class="logo" src="../lib/img/logo.gif">
+    </a>
+    <div class="searchDiv">
+        <input type="text" placeholder="时尚男鞋   太阳镜" name="keyword">
+        <button class="searchButton" type="submit">搜索</button>
+        <div class="searchBelow">
+            <span><a href="search_bar.html">平衡车</a><span>|</span> </span>
+            <span><a href="search_bar.html">扫地机器人</a><span>|</span> </span>
+            <span><a href="search_bar.html">原汁机</a><span>|</span> </span>
+            <span><a href="search_bar.html">冰箱</a><span>|</span> </span>
+        </div>
+    </div>
+</div>
+</body>
+</html>

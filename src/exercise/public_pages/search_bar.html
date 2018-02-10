@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>搜索栏</title>
+    <script type="text/javascript" src="../lib/js/jquery-3.2.1.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="../lib/css/bootstrap.min.css">
+    <script type="text/javascript" src="../lib/js/bootstrap.min.js"></script>
+</head>
+<style>
+
+    div.searchDiv {
+        margin: 50px auto;
+        width: 400px;
+        height: 40px;
+        background-color: #C40000;
+        padding: 1px;
+        display: block;
+    }
+
+    div.searchDiv input {
+        width: 275px;
+        height: 36px;
+        border: 1px solid transparent;
+        margin: 1px;
+        outline: none;
+    }
+
+    div.searchDiv button {
+        width: 110px;
+        background-color: transparent;
+        border: 1px solid transparent;
+        color: white;
+        font-size: 20px;
+        font-weight: bold;
+        outline: none;
+    }
+
+    div.searchBelow {
+        margin-top: 3px;
+        margin-left: -20px;
+    }
+
+    div.searchBelow span {
+        color: #999999;
+    }
+
+    div.searchBelow a {
+        margin: 0px 20px 0px 20px;
+        font-size: 14px;
+    }
+
+    img.logo {
+        left: 0px;
+        top: 50px;
+        z-index: -1;
+        position: absolute;
+    }
+
+    body {
+        font-size: 12px;
+        font-family: Arial;
+    }
+
+    a {
+        color: #999999;
+    }
+
+    a:hover {
+        text-decoration: none;
+        color: #C40000;
+    }
+
+
+</style>
+<body>
+<div>
+    <a href="search_bar.html">
+        <img class="logo" id="logo" src="../lib/img/logo.gif">
+    </a>
+    <div class="searchDiv">
+        <input type="text" placeholder="时尚男鞋  太阳镜">
+        <button class="searchButton">搜索</button>
+        <div class="searchBelow">
+            <span><a href="search_bar.html">平衡车</a><span>|</span></span>
+            <span><a href="search_bar.html">扫地机器人</a><span>|</span></span>
+            <span><a href="search_bar.html">原汁机</a><span>|</span></span>
+            <span><a href="search_bar.html">冰箱</a></span>
+        </div>
+    </div>
+</div>
+</body>
+</html>
