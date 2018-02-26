@@ -61,9 +61,33 @@
         top: 36px;
         z-index: -1;
     }
+    img.catear {
+        position: absolute;
+        height: 15px;
+    }
 
 </style>
+<script>
+    $(function () {
+        $("div.rightMenu span").mouseenter(function () {
+            var left = $(this).position().left;
+            var top = $(this).position().top;
+            var width = $(this).css("width");
+            var destLeft = parseInt(left) + parseInt(width) / 2;
+            var catear = $("img.catear");
+            catear.css("left", destLeft);
+            catear.css("top", top + 130);
+            catear.fadeIn(500);
+        })
+        $("div.rightMenu span").mouseleave(function () {
+            var catear = $("img.catear");
+            catear.hide();
+        })
+    })
+</script>
 <body>
+<div style="height: 150px"></div>
+<img src='../lib/img/catear.png' class="catear" id="catear" style="left: 260.5px; top: 159.65px; display: none;">
 <div class="category_carousel" id="category_carousel">
     <div class="headBar">
         <div class="head">
