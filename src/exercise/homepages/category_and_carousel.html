@@ -61,6 +61,7 @@
         top: 36px;
         z-index: -1;
     }
+
     img.catear {
         position: absolute;
         height: 15px;
@@ -78,7 +79,8 @@
             catear.css("left", destLeft);
             catear.css("top", top + 130);
             catear.fadeIn(500);
-        })
+        });
+
         $("div.rightMenu span").mouseleave(function () {
             var catear = $("img.catear");
             catear.hide();
